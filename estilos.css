@@ -1,0 +1,153 @@
+
+body{
+    background-color: black;
+    color:white;
+    padding:20px
+}
+.container-header{
+    width: 100%;
+    height: 100px;
+    background-color: royalblue;
+    color: white;
+    padding: 20px;
+
+}
+
+.container-barnav {
+    width: 100%;
+    height: 30px; 
+    background-color: rebeccapurple;
+    color:white;
+    padding:20px;
+}
+/* seudo clases  */
+
+a:hover{
+    color: white;
+} 
+/*a:link {
+    color: whitesmoke;
+}*/
+/*a:visited{
+    color: black;
+}*/
+
+/*fin pseudoclases */
+
+.continer-main{
+    width: 99%;
+    height: 800px;
+    background-color: rgb(238, 235, 247);
+    color:white;
+    padding:29px;
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+.container-section{
+    width: 80%;
+    height: 800px;
+    background-color: yellow;
+    color:white;
+    margin-right: 20px;
+}
+/*pseudo elemento*/
+/*first-letter me cambia la primer letra del párrafo
+first-line cambia toda la primer línea*/
+
+p::first-letter{
+    color: purple;
+    font-size: x-large;
+}
+p::first-line{
+    color: pink;
+    font-variant: small-caps;
+}
+.container-title-subttitle > p:first-child{
+    font-size: 40px;
+    text-shadow: 1px 1px 4px rgba(0,0,0.45);
+}
+
+.container-title-subttitle > p:last-child{
+    font-size: 20px;
+    text-shadow: 1px 1px 4px rgba(0,0,0.45);
+
+}
+
+.container-aside{
+    width: 20%;
+    height: 760px;
+    background-color: purple;
+    color:white;
+    padding:20px;
+}
+.cuadro1{
+    display: flex;
+    height: 100px;
+    width: 100px;
+    background-image: url(assets/1.jpg);
+}
+.cuadro2{
+    display: flex;
+    height: 100px;
+    width: 100px;
+    background-image: url(assets/2.jpg);
+}
+.cuadro1{
+    display: flex;
+    height: 100px;
+    width: 100px;
+    background-image: url(assets/3.jpg);
+}
+.cuadro1{
+    display: flex;
+    height: 100px;
+    width: 100px;
+    background-image: url(assets/4.jpg);
+}
+
+.imagenaside1{
+    background-image: url(assets/1.jpg);
+    width: 100%;
+    height: 500px;
+}
+.container-footer{
+    width: 100%;
+    height: 100px;
+    background-color: blue;
+    color:white;
+    padding:20px;
+}
+/*Extra small devices - phones)*/
+@media only screen and (max-width:600px){
+    .container-section{
+        background-image: url(assets/1.jpg);
+    }
+} 
+/*Small devices - portrait tables and large phones)*/
+@media only screen and (min-width:600px){
+    .container-section{
+        background-image: url(assets/2.jpg);
+    }
+} 
+/*Medium devices - landscape tablets*/
+@media only screen and (min-width:768px){
+    .container-section{
+        background-image: url(assets/3.jpg);
+    }
+} 
+/*Large devices - laptops and descktops*/
+@media only screen and (min-width:922px){
+    .container-section{
+        background-image: url(assets/4.jpg);
+    }
+} 
+/*Extra Large devices - large laptops and descktops*/
+@media only screen and (min-width:1200px){
+    .container-section{
+        background-image: url(assets/5.jpg);
+    }
+    .container-aside{
+    }
+} 
